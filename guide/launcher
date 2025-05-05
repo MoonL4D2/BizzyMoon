@@ -12,24 +12,24 @@
 +ai_show_hull_attacks 0
 +ai_use_visibility_cache 1
 +allow_all_bot_survivor_team 1
-+autoaim_max_deflect
-+autoaim_max_dist
++autoaim_max_deflect 1.0
++autoaim_max_dist 0
 +autoaim_viewing_client
-+breakable_disable_gib_limit
-+breakable_multiplayer
-+car_alarm_chirp_distance
-+car_alarm_chirp_duration
-+car_alarm_chirp_interval
-+car_alarm_distance
-+car_alarm_duration
-+cc_norepeat
-+collision_shake_amp
-+collision_shake_freq
-+collision_shake_time
-+commentary_available
-+common_dps_spew
-+common_dps_window
-+debug_l4dverbose
++breakable_disable_gib_limit 0
++breakable_multiplayer 1
++car_alarm_chirp_distance 500
++car_alarm_chirp_duration 1
++car_alarm_chirp_interval 1
++car_alarm_distance 1000
++car_alarm_duration 20
++cc_norepeat 0
++collision_shake_amp 0
++collision_shake_freq 0
++collision_shake_time 0
++commentary_available 1
++common_dps_spew 0
++common_dps_window 0
++debug_l4dverbose 0
 +debug_materialmodifycontrol
 +debug_overlay_fullposition
 +debug_physimpact
