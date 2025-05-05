@@ -1,321 +1,320 @@
-	Command
-+	ai_debug_ragdoll_magnets
-+	ai_debug_speech
-+	ai_expression_frametime
-+	ai_expression_optimization
-+	ai_force_serverside_ragdoll
-+	ai_LOS_mode
-+	ai_post_frame_navigation
-+	ai_sequence_debug
-+	ai_setupbones_debug
-+	ai_show_hull_attacks
-+	ai_use_visibility_cache
-+	allow_all_bot_survivor_team
-+	autoaim_max_deflect
-+	autoaim_max_dist
-+	autoaim_viewing_client
-+	breakable_disable_gib_limit
-+	breakable_multiplayer
-+	car_alarm_chirp_distance
-+	car_alarm_chirp_duration
-+	car_alarm_chirp_interval
-+	car_alarm_distance
-+	car_alarm_duration
-+	cc_norepeat
-+	collision_shake_amp
-+	collision_shake_freq
-+	collision_shake_time
-+	commentary_available
-+	common_dps_spew
-+	common_dps_window
-+	debug_l4dverbose
-+	debug_materialmodifycontrol
-+	debug_overlay_fullposition
-+	debug_physimpact
-+	debug_touchlinks
-+	decalfrequency
-+	director_afk_timeout
-+	director_allow_infected_bots
-+	director_min_start_players
-+	director_report_screen_delay
-+	director_survival_setup_time
-+	director_vs_convert_pills
-+	dispcoll_drawplane
-+	displaysoundlist
-+	elevator_movedelay
-+	ent_debugkeys
-+	ent_show_contexts
-+	ent_steadystate_batchsize
-+	ent_steadystate_cooldown
-+	ent_steadystate_delay
-+	ent_steadystate_enable
-+	ent_steadystate_interval
-+	fall_speed_fatal
-+	fall_speed_safe
-+	fidget_max_interval
-+	fidget_min_interval
-+	fire_absorbrate
-+	fire_dmgbase
-+	fire_dmginterval
-+	fire_dmgscale
-+	fire_extabsorb
-+	fire_extscale
-+	fire_growthrate
-+	fire_heatscale
-+	fire_incomingheatscale
-+	fire_maxabsorb
-+	flex_expression
-+	flex_talk
-+	func_break_reduction_factor
-+	func_breakdmg_bullet
-+	func_breakdmg_club
-+	func_breakdmg_explosive
-+	g_debug_doors
-+	g_debug_npc_vehicle_roles
-+	g_debug_transitions
-+	grenadelauncher_startpos_forward
-+	grenadelauncher_startpos_right
-+	grenadelauncher_startpos_up
-+	grenadelauncher_vel_up
-+	grenadelauncher_vel_variance
-+	inferno_max_trace_per_tick
-+	l4d1_survivor_give_item
-+	l4d_show_incapupdate
-+	l4d_show_weaponequip
-+	l4d_stats_nogameplaycheck
-+	l4d_stats_track
-+	lservercfgfile
-+	mapcyclefile
-+	mp_allowNPCs
-+	mp_autocrosshair
-+	mp_autokick
-+	mp_autoteambalance
-+	mp_c4timer
-+	mp_clan_ready_signal
-+	mp_clan_readyrestart
-+	mp_defaultteam
-+	mp_enableroundwaittime
-+	mp_falldamage
-+	mp_flashlight
-+	mp_footsteps
-+	mp_forcerespawn
-+	mp_fraglimit
-+	mp_freezetime
-+	mp_humanteam
-+	mp_limitteams
-+	mp_logdetail
-+	mp_restartgame
-+	mp_roundtime
-+	mp_spawnprotectiontime
-+	mp_stalemate_at_timelimit
-+	mp_stalemate_enable
-+	mp_stalemate_timelimit
-+	mp_startmoney
-+	mp_teamlist
-+	mp_teamoverride
-+	mp_teamplay
-+	mp_tkpunish
-+	mp_waitingforplayers_cancel
-+	mp_waitingforplayers_restart
-+	mp_waitingforplayers_time
-+	mp_weaponstay
-+	music_bank_max_duration
-+	music_bank_min_duration
-+	nav_drag_selection_volume_zmax_offset
-+	nav_drag_selection_volume_zmin_offset
-+	nav_save_history
-+	nb_avoid
-+	nb_avoid_interval
-+	nb_player_move_direct
-+	nextlevel
-+	npc_vphysics
-+	phys2_shoot_speed
-+	phys_impactforcescale
-+	phys_penetration_error_time
-+	phys_shoot_torque
-+	phys_speeds
-+	phys_stressbodyweights
-+	phys_timescale
-+	phys_upimpactforcescale
-+	physicsshadowupdate_render
-+	pipe_bomb_beep_interval_delta
-+	pipe_bomb_beep_min_interval
-+	pipe_bomb_initial_beep_interval
-+	pipe_bomb_shake_amplitude
-+	pipe_bomb_shake_radius
-+	pipe_bomb_timer_duration
-+	player_old_armor
-+	prop_active_gib_limit
-+	prop_active_gib_max_fade_time
-+	rr_debugplayer
-+	rr_debugresponseconcept
-+	rr_debugresponses
-+	rr_debugrule
-+	rr_dumpresponses
-+	sb_allow_leading
-+	sb_melee_approach_victim
-+	sb_reachable_cache_paranoia
-+	sb_skill
-+	sb_temp_health_consider_factor
-+	sb_toughness_buffer
-+	sb_transition
-+	scene_async_prefetch_spew
-+	scene_clientplayback
-+	scene_forcecombined
-+	scene_maxcaptionradius
-+	script_attach_debugger_at_startup
-+	script_break_in_native_debugger_on_error
-+	servercfgfile
-+	sk_player_arm
-+	sk_player_chest
-+	sk_player_head
-+	sk_player_leg
-+	sk_player_stomach
-+	spec_filter
-+	spec_filter_infected
-+	spec_filter_survivors
-+	step_spline
-+	survivor_death_anims
-+	survivor_incap_hopeless_decay_rate
-+	survivor_incap_max_fall_damage
-+	survivor_incap_tongued_decay_rate
-+	survivor_limit
-+	survivor_model_selection
-+	survivor_respawn_with_guns
-+	sv__ragdoll_max_remove_per_frame
-+	sv_allow_votes
-+	sv_benchmark_autovprofrecord
-+	sv_benchmark_numticks
-+	sv_bonus_challenge
-+	sv_clockcorrection_msecs
-+	sv_debug_entity
-+	sv_infected_scale_max
-+	sv_infected_scale_min
-+	sv_lagflushbonecache
-+	sv_lagpushticks
-+	sv_massreport
-+	sv_max_usercmd_future_ticks
-+	sv_maxunlag
-+	sv_music_debug
-+	sv_player_max_separation_force
-+	sv_playerperfhistorycount
-+	sv_pz_endgame_vote_period
-+	sv_pz_endgame_vote_post_period
-+	sv_ragdoll_maxcount
-+	sv_ragdoll_maxcount_boss
-+	sv_ragdoll_maxcount_generic
-+	sv_ragdoll_maxcount_gib
-+	sv_ragdoll_maxcount_special
-+	sv_ragdoll_maxcount_survivor
-+	sv_ragdoll_version
-+	sv_regeneration_wait_time
-+	sv_rescue_disabled
-+	sv_runcmds
-+	sv_script_think_interval
-+	sv_showladders
-+	sv_strict_notarget
-+	sv_teststepsimulation
-+	sv_thinktimecheck
-+	sv_threaded_init
-+	sv_unlag
-+	sv_unlag_debug
-+	sv_unlag_fixstuck
-+	sv_vehicle_autoaim_scale
-+	sv_vote_command_delay
-+	sv_vote_failure_timer
-+	sv_vote_issue_change_difficulty_allowed
-+	sv_vote_issue_change_map_later_allowed
-+	sv_vote_issue_change_map_now_allowed
-+	sv_vote_issue_change_mission_allowed
-+	sv_vote_issue_kick_allowed
-+	sv_vote_issue_restart_game_allowed
-+	sv_vote_kick_ban_duration
-+	sv_vote_timer_duration
-+	sv_zoo_model_filter
-+	sv_zoo_spacing
-+	sv_zoo_spacing_rows
-+	sv_zoo_spacing_wrap
-+	sv_zoo_tint_clr
-+	sv_zoo_tint_loop
-+	sv_zoo_wrap_skin
-+	tank_rock_overhead_percent
-+	target_scan_use_query_cache
-+	tauntfrequency
-+	template_debug
-+	tongue_bullet_radius
-+	trace_report
-+	tutor
-+	tv_allow_camera_man
-+	tv_allow_static_shots
-+	tv_delay
-+	tv_delaymapchange
-+	versus_force_start_time
-+	versus_marker_num
-+	versus_round_restarttimer
-+	versus_round_restarttimer_finale
-+	voice_serverdebug
-+	vprof_scope_entity_gamephys
-+	vprof_scope_entity_thinks
-+	vprof_think_limit
-+	vs_score_pp_health
-+	vs_score_pp_healthbuffer
-+	weapon_showproficiency
-+	witch_rage_ramp_duration
-+	xbox_steering_deadzone
-+	xc_crouch_debounce
-+	z_attack_change_target_range
-+	z_attack_interval
-+	z_attack_max_range
-+	z_attack_min_range
-+	z_attack_movement_penalty
-+	z_attack_on_the_run_range
-+	z_bbq_min
-+	z_bbq_rate
-+	z_burn_max
-+	z_burn_rate
-+	z_checkpoint_debug
-+	z_damage_screen_fade_alpha
-+	z_damage_screen_fade_duration
-+	z_debug_infected_server_anim
-+	z_debug_stuck
-+	z_door_pound_damage
-+	z_exploding_force
-+	z_exploding_inner_radius
-+	z_exploding_outer_radius
-+	z_fatal_blast_incineration_probability
-+	z_fatal_blast_max_ragdolls
-+	z_fatal_blast_min_ragdolls
-+	z_finale_spawn_safety_range_override
-+	z_ghost_cooldown
-+	z_ghost_delay_minspawn
-+	z_ghost_duration
-+	z_ghost_group_spawn
-+	z_ghost_line_of_scrimmage_far
-+	z_ghost_line_of_scrimmage_near
-+	z_ghost_line_of_scrimmage_safety
-+	z_ghost_line_of_scrimmage_threat_bonus
-+	z_ghost_los_expected_progress
-+	z_ghost_offer_acceptance_time
-+	z_ghost_offer_spawn_safety_time
-+	z_ghost_spawn_distance
-+	z_head_damage_causes_wounds
-+	z_hunter_lunge_distance
-+	z_hunter_lunge_pitch
-+	z_max_survivor_damage
-+	z_minigun_atomize
-+	z_non_head_damage_factor_multiplier
-+	z_population
-+	z_pounce_shake_amplitude
-+	z_pounce_shake_duration
-+	z_pounce_shake_radius
-+	z_pounce_stumble_radius
-+	z_ragdoll_discard_range
-+	z_scrimmage_sphere
-+	z_survivor_respawn_health
-+	z_tank_footstep_shake_amplitude
-+	z_tank_footstep_shake_duration
-+	z_tank_footstep_shake_interval
-+	z_tank_footstep_shake_radius
-+	z_use_next_difficulty_damage_factor
-+	z_witch_always_kills
-+	z_witch_tongue_range
++ai_debug_ragdoll_magnets
++ai_debug_speech
++ai_expression_frametime
++ai_expression_optimization
++ai_force_serverside_ragdoll
++ai_LOS_mode
++ai_post_frame_navigation
++ai_sequence_debug
++ai_setupbones_debug
++ai_show_hull_attacks
++ai_use_visibility_cache
++allow_all_bot_survivor_team
++autoaim_max_deflect
++autoaim_max_dist
++autoaim_viewing_client
++breakable_disable_gib_limit
++breakable_multiplayer
++car_alarm_chirp_distance
++car_alarm_chirp_duration
++car_alarm_chirp_interval
++car_alarm_distance
++car_alarm_duration
++cc_norepeat
++collision_shake_amp
++collision_shake_freq
++collision_shake_time
++commentary_available
++common_dps_spew
++common_dps_window
++debug_l4dverbose
++debug_materialmodifycontrol
++debug_overlay_fullposition
++debug_physimpact
++debug_touchlinks
++decalfrequency
++director_afk_timeout
++director_allow_infected_bots
++director_min_start_players
++director_report_screen_delay
++director_survival_setup_time
++director_vs_convert_pills
++dispcoll_drawplane
++displaysoundlist
++elevator_movedelay
++ent_debugkeys
++ent_show_contexts
++ent_steadystate_batchsize
++ent_steadystate_cooldown
++ent_steadystate_delay
++ent_steadystate_enable
++ent_steadystate_interval
++fall_speed_fatal
++fall_speed_safe
++fidget_max_interval
++fidget_min_interval
++fire_absorbrate
++fire_dmgbase
++fire_dmginterval
++fire_dmgscale
++fire_extabsorb
++fire_extscale
++fire_growthrate
++fire_heatscale
++fire_incomingheatscale
++fire_maxabsorb
++flex_expression
++flex_talk
++func_break_reduction_factor
++func_breakdmg_bullet
++func_breakdmg_club
++func_breakdmg_explosive
++g_debug_doors
++g_debug_npc_vehicle_roles
++g_debug_transitions
++grenadelauncher_startpos_forward
++grenadelauncher_startpos_right
++grenadelauncher_startpos_up
++grenadelauncher_vel_up
++grenadelauncher_vel_variance
++inferno_max_trace_per_tick
++l4d1_survivor_give_item
++l4d_show_incapupdate
++l4d_show_weaponequip
++l4d_stats_nogameplaycheck
++l4d_stats_track
++lservercfgfile
++mapcyclefile
++mp_allowNPCs
++mp_autocrosshair
++mp_autokick
++mp_autoteambalance
++mp_c4timer
++mp_clan_ready_signal
++mp_clan_readyrestart
++mp_defaultteam
++mp_enableroundwaittime
++mp_falldamage
++mp_flashlight
++mp_footsteps
++mp_forcerespawn
++mp_fraglimit
++mp_freezetime
++mp_humanteam
++mp_limitteams
++mp_logdetail
++mp_restartgame
++mp_roundtime
++mp_spawnprotectiontime
++mp_stalemate_at_timelimit
++mp_stalemate_enable
++mp_stalemate_timelimit
++mp_startmoney
++mp_teamlist
++mp_teamoverride
++mp_teamplay
++mp_tkpunish
++mp_waitingforplayers_cancel
++mp_waitingforplayers_restart
++mp_waitingforplayers_time
++mp_weaponstay
++music_bank_max_duration
++music_bank_min_duration
++nav_drag_selection_volume_zmax_offset
++nav_drag_selection_volume_zmin_offset
++nav_save_history
++nb_avoid
++nb_avoid_interval
++nb_player_move_direct
++nextlevel
++npc_vphysics
++phys2_shoot_speed
++phys_impactforcescale
++phys_penetration_error_time
++phys_shoot_torque
++phys_speeds
++phys_stressbodyweights
++phys_timescale
++phys_upimpactforcescale
++physicsshadowupdate_render
++pipe_bomb_beep_interval_delta
++pipe_bomb_beep_min_interval
++pipe_bomb_initial_beep_interval
++pipe_bomb_shake_amplitude
++pipe_bomb_shake_radius
++pipe_bomb_timer_duration
++player_old_armor
++prop_active_gib_limit
++prop_active_gib_max_fade_time
++rr_debugplayer
++rr_debugresponseconcept
++rr_debugresponses
++rr_debugrule
++rr_dumpresponses
++sb_allow_leading
++sb_melee_approach_victim
++sb_reachable_cache_paranoia
++sb_skill
++sb_temp_health_consider_factor
++sb_toughness_buffer
++sb_transition
++scene_async_prefetch_spew
++scene_clientplayback
++scene_forcecombined
++scene_maxcaptionradius
++script_attach_debugger_at_startup
++script_break_in_native_debugger_on_error
++servercfgfile
++sk_player_arm
++sk_player_chest
++sk_player_head
++sk_player_leg
++sk_player_stomach
++spec_filter
++spec_filter_infected
++spec_filter_survivors
++step_spline
++survivor_death_anims
++survivor_incap_hopeless_decay_rate
++survivor_incap_max_fall_damage
++survivor_incap_tongued_decay_rate
++survivor_limit
++survivor_model_selection
++survivor_respawn_with_guns
++sv__ragdoll_max_remove_per_frame
++sv_allow_votes
++sv_benchmark_autovprofrecord
++sv_benchmark_numticks
++sv_bonus_challenge
++sv_clockcorrection_msecs
++sv_debug_entity
++sv_infected_scale_max
++sv_infected_scale_min
++sv_lagflushbonecache
++sv_lagpushticks
++sv_massreport
++sv_max_usercmd_future_ticks
++sv_maxunlag
++sv_music_debug
++sv_player_max_separation_force
++sv_playerperfhistorycount
++sv_pz_endgame_vote_period
++sv_pz_endgame_vote_post_period
++sv_ragdoll_maxcount
++sv_ragdoll_maxcount_boss
++sv_ragdoll_maxcount_generic
++sv_ragdoll_maxcount_gib
++sv_ragdoll_maxcount_special
++sv_ragdoll_maxcount_survivor
++sv_ragdoll_version
++sv_regeneration_wait_time
++sv_rescue_disabled
++sv_runcmds
++sv_script_think_interval
++sv_showladders
++sv_strict_notarget
++sv_teststepsimulation
++sv_thinktimecheck
++sv_threaded_init
++sv_unlag
++sv_unlag_debug
++sv_unlag_fixstuck
++sv_vehicle_autoaim_scale
++sv_vote_command_delay
++sv_vote_failure_timer
++sv_vote_issue_change_difficulty_allowed
++sv_vote_issue_change_map_later_allowed
++sv_vote_issue_change_map_now_allowed
++sv_vote_issue_change_mission_allowed
++sv_vote_issue_kick_allowed
++sv_vote_issue_restart_game_allowed
++sv_vote_kick_ban_duration
++sv_vote_timer_duration
++sv_zoo_model_filter
++sv_zoo_spacing
++sv_zoo_spacing_rows
++sv_zoo_spacing_wrap
++sv_zoo_tint_clr
++sv_zoo_tint_loop
++sv_zoo_wrap_skin
++tank_rock_overhead_percent
++target_scan_use_query_cache
++tauntfrequency
++template_debug
++tongue_bullet_radius
++trace_report
++tutor
++tv_allow_camera_man
++tv_allow_static_shots
++tv_delay
++tv_delaymapchange
++versus_force_start_time
++versus_marker_num
++versus_round_restarttimer
++versus_round_restarttimer_finale
++voice_serverdebug
++vprof_scope_entity_gamephys
++vprof_scope_entity_thinks
++vprof_think_limit
++vs_score_pp_health
++vs_score_pp_healthbuffer
++weapon_showproficiency
++witch_rage_ramp_duration
++xbox_steering_deadzone
++xc_crouch_debounce
++z_attack_change_target_range
++z_attack_interval
++z_attack_max_range
++z_attack_min_range
++z_attack_movement_penalty
++z_attack_on_the_run_range
++z_bbq_min
++z_bbq_rate
++z_burn_max
++z_burn_rate
++z_checkpoint_debug
++z_damage_screen_fade_alpha
++z_damage_screen_fade_duration
++z_debug_infected_server_anim
++z_debug_stuck
++z_door_pound_damage
++z_exploding_force
++z_exploding_inner_radius
++z_exploding_outer_radius
++z_fatal_blast_incineration_probability
++z_fatal_blast_max_ragdolls
++z_fatal_blast_min_ragdolls
++z_finale_spawn_safety_range_override
++z_ghost_cooldown
++z_ghost_delay_minspawn
++z_ghost_duration
++z_ghost_group_spawn
++z_ghost_line_of_scrimmage_far
++z_ghost_line_of_scrimmage_near
++z_ghost_line_of_scrimmage_safety
++z_ghost_line_of_scrimmage_threat_bonus
++z_ghost_los_expected_progress
++z_ghost_offer_acceptance_time
++z_ghost_offer_spawn_safety_time
++z_ghost_spawn_distance
++z_head_damage_causes_wounds
++z_hunter_lunge_distance
++z_hunter_lunge_pitch
++z_max_survivor_damage
++z_minigun_atomize
++z_non_head_damage_factor_multiplier
++z_population
++z_pounce_shake_amplitude
++z_pounce_shake_duration
++z_pounce_shake_radius
++z_pounce_stumble_radius
++z_ragdoll_discard_range
++z_scrimmage_sphere
++z_survivor_respawn_health
++z_tank_footstep_shake_amplitude
++z_tank_footstep_shake_duration
++z_tank_footstep_shake_interval
++z_tank_footstep_shake_radius
++z_use_next_difficulty_damage_factor
++z_witch_always_kills
++z_witch_tongue_range
