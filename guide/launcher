@@ -1,15 +1,17 @@
-+ai_debug_ragdoll_magnets
-+ai_debug_speech
-+ai_expression_frametime
-+ai_expression_optimization
-+ai_force_serverside_ragdoll
-+ai_LOS_mode
-+ai_post_frame_navigation
-+ai_sequence_debug
-+ai_setupbones_debug
-+ai_show_hull_attacks
-+ai_use_visibility_cache
-+allow_all_bot_survivor_team
++exec console.cfg
++servercfgfile "server1.cfg"
++ai_debug_ragdoll_magnets 0
++ai_debug_speech 0
++ai_expression_frametime 
++ai_expression_optimization 0
++ai_force_serverside_ragdoll 0
++ai_LOS_mode 0
++ai_post_frame_navigation 1
++ai_sequence_debug 0
++ai_setupbones_debug 0
++ai_show_hull_attacks 0
++ai_use_visibility_cache 1
++allow_all_bot_survivor_team 1
 +autoaim_max_deflect
 +autoaim_max_dist
 +autoaim_viewing_client
@@ -164,7 +166,6 @@
 +scene_maxcaptionradius
 +script_attach_debugger_at_startup
 +script_break_in_native_debugger_on_error
-+servercfgfile
 +sk_player_arm
 +sk_player_chest
 +sk_player_head
