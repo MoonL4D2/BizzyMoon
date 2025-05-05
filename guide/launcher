@@ -34,16 +34,16 @@
 +debug_overlay_fullposition
 +debug_physimpact
 +debug_touchlinks
-+decalfrequency
-+director_afk_timeout
-+director_allow_infected_bots
-+director_min_start_players
-+director_report_screen_delay
-+director_survival_setup_time
-+director_vs_convert_pills
-+dispcoll_drawplane
-+displaysoundlist
-+elevator_movedelay
++decalfrequency 1.25
++director_afk_timeout 20
++director_allow_infected_bots 1
++director_min_start_players 1
++director_report_screen_delay 10
++director_survival_setup_time 0
++director_vs_convert_pills 0
++dispcoll_drawplane 0
++displaysoundlist 0
++elevator_movedelay 0
 +ent_debugkeys
 +ent_show_contexts
 +ent_steadystate_batchsize
