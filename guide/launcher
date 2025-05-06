@@ -5,6 +5,12 @@
 -tickrate 120
 -maxplayers 32
 -timeout 10
+-high
+-preload
+-nohltv
+-nominidumps
+-nomessagebox
+-nocrashdialog
 +exec console.cfg
 +servercfgfile "server1.cfg"
 +ai_debug_ragdoll_magnets 0
@@ -86,6 +92,8 @@
 +grenadelauncher_startpos_up 0
 +grenadelauncher_vel_up 125
 +grenadelauncher_vel_variance 0
++host_flush_threshold 0
++host_xbox_e3_restart 1440
 +hostmap 
 +hostname 
 +inferno_max_trace_per_tick 16
@@ -194,7 +202,7 @@
 +survivor_incap_tongued_decay_rate 20
 +survivor_limit 4
 +survivor_model_selection -1
-+survivor_respawn_with_guns 2
++survivor_respawn_with_guns 1
 +sv__ragdoll_max_remove_per_frame 1
 +sv_allow_votes 1
 +sv_allow_wait_command 1
@@ -203,8 +211,10 @@
 +sv_benchmark_autovprofrecord 0 
 +sv_benchmark_numticks 0
 +sv_bonus_challenge 0
++sv_cheats 0
 +sv_clockcorrection_msecs 50
 +sv_debug_entity
++sv_forcepreload 1
 +sv_infected_scale_max 1.025
 +sv_infected_scale_min 1.025
 +sv_lagflushbonecache 0
@@ -254,6 +264,7 @@
 +sv_zoo_tint_clr 
 +sv_zoo_tint_loop
 +sv_zoo_wrap_skin
++sys_minidumpspewlines 0
 +tank_rock_overhead_percent 100
 +target_scan_use_query_cache 
 +tauntfrequency 0
