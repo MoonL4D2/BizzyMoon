@@ -1,3 +1,7 @@
+-game left4dead2
+-ip $IP
+-port -$PORT
+-
 +exec console.cfg
 +servercfgfile "server1.cfg"
 +ai_debug_ragdoll_magnets 0
@@ -23,9 +27,9 @@
 +car_alarm_distance 1000
 +car_alarm_duration 20
 +cc_norepeat 0
-+collision_shake_amp 0
-+collision_shake_freq 0
-+collision_shake_time 0
++collision_shake_amp 0.0
++collision_shake_freq 0.0
++collision_shake_time 0.0
 +commentary_available 1
 +common_dps_spew 0
 +common_dps_window 0
@@ -51,115 +55,117 @@
 +ent_steadystate_delay
 +ent_steadystate_enable
 +ent_steadystate_interval
-+fall_speed_fatal
-+fall_speed_safe
-+fidget_max_interval
-+fidget_min_interval
++fall_speed_fatal 720
++fall_speed_safe 540
++fidget_max_interval 30
++fidget_min_interval 15
 +fire_absorbrate
-+fire_dmgbase
-+fire_dmginterval
-+fire_dmgscale
++fire_dmgbase 1
++fire_dmginterval 1
++fire_dmgscale 0.1
 +fire_extabsorb
 +fire_extscale
 +fire_growthrate
 +fire_heatscale
 +fire_incomingheatscale
 +fire_maxabsorb
-+flex_expression
-+flex_talk
-+func_break_reduction_factor
-+func_breakdmg_bullet
-+func_breakdmg_club
-+func_breakdmg_explosive
-+g_debug_doors
-+g_debug_npc_vehicle_roles
-+g_debug_transitions
-+grenadelauncher_startpos_forward
-+grenadelauncher_startpos_right
-+grenadelauncher_startpos_up
-+grenadelauncher_vel_up
-+grenadelauncher_vel_variance
-+inferno_max_trace_per_tick
-+l4d1_survivor_give_item
-+l4d_show_incapupdate
-+l4d_show_weaponequip
-+l4d_stats_nogameplaycheck
-+l4d_stats_track
-+lservercfgfile
-+mapcyclefile
-+mp_allowNPCs
-+mp_autocrosshair
-+mp_autokick
-+mp_autoteambalance
-+mp_c4timer
++flex_expression ""
++flex_talk 
++func_break_reduction_factor 1.0
++func_breakdmg_bullet 10
++func_breakdmg_club 30
++func_breakdmg_explosive 20
++g_debug_doors 0
++g_debug_npc_vehicle_roles 0
++g_debug_transitions 0
++grenadelauncher_startpos_forward 16 
++grenadelauncher_startpos_right 4
++grenadelauncher_startpos_up 0
++grenadelauncher_vel_up 125
++grenadelauncher_vel_variance 0
++hostmap
++hostname
++inferno_max_trace_per_tick 16
++l4d1_survivor_give_item 0
++l4d_show_incapupdate 0
++l4d_show_weaponequip 0
++l4d_stats_nogameplaycheck 1
++l4d_stats_track 1
++lservercfgfile ""
++mapcyclefile ""
++mp_allowNPCs 0
++mp_autocrosshair 1
++mp_autokick 0
++mp_autoteambalance 0
++mp_c4timer 10
 +mp_clan_ready_signal
 +mp_clan_readyrestart
-+mp_defaultteam
++mp_defaultteam 0
 +mp_enableroundwaittime
-+mp_falldamage
-+mp_flashlight
-+mp_footsteps
-+mp_forcerespawn
-+mp_fraglimit
-+mp_freezetime
-+mp_humanteam
-+mp_limitteams
-+mp_logdetail
-+mp_restartgame
-+mp_roundtime
-+mp_spawnprotectiontime
-+mp_stalemate_at_timelimit
-+mp_stalemate_enable
-+mp_stalemate_timelimit
-+mp_startmoney
-+mp_teamlist
-+mp_teamoverride
-+mp_teamplay
-+mp_tkpunish
-+mp_waitingforplayers_cancel
-+mp_waitingforplayers_restart
-+mp_waitingforplayers_time
-+mp_weaponstay
-+music_bank_max_duration
-+music_bank_min_duration
++mp_falldamage 0
++mp_flashlight 1
++mp_footsteps 1
++mp_forcerespawn 1
++mp_fraglimit 0
++mp_freezetime 0
++mp_humanteam any
++mp_limitteams 0
++mp_logdetail 0
++mp_restartgame 0
++mp_roundtime 9
++mp_spawnprotectiontime 0
++mp_stalemate_at_timelimit 0
++mp_stalemate_enable 0
++mp_stalemate_timelimit 0
++mp_startmoney 99999
++mp_teamlist ""
++mp_teamoverride 1
++mp_teamplay 0
++mp_tkpunish 0
++mp_waitingforplayers_cancel 0
++mp_waitingforplayers_restart 0
++mp_waitingforplayers_time 0
++mp_weaponstay 0
++music_bank_max_duration 600
++music_bank_min_duration 600
 +nav_drag_selection_volume_zmax_offset
 +nav_drag_selection_volume_zmin_offset
-+nav_save_history
-+nb_avoid
-+nb_avoid_interval
-+nb_player_move_direct
++nav_save_history 0
++nb_avoid 0
++nb_avoid_interval 1
++nb_player_move_direct 0
 +nextlevel
-+npc_vphysics
-+phys2_shoot_speed
-+phys_impactforcescale
-+phys_penetration_error_time
-+phys_shoot_torque
-+phys_speeds
-+phys_stressbodyweights
-+phys_timescale
-+phys_upimpactforcescale
-+physicsshadowupdate_render
-+pipe_bomb_beep_interval_delta
-+pipe_bomb_beep_min_interval
-+pipe_bomb_initial_beep_interval
-+pipe_bomb_shake_amplitude
-+pipe_bomb_shake_radius
-+pipe_bomb_timer_duration
-+player_old_armor
-+prop_active_gib_limit
-+prop_active_gib_max_fade_time
++npc_vphysics 0
++phys2_shoot_speed 0
++phys_impactforcescale 0.1
++phys_penetration_error_time 5
++phys_shoot_torque 1000000
++phys_speeds 0
++phys_stressbodyweights 5.0
++phys_timescale 1.0
++phys_upimpactforcescale 0.2
++physicsshadowupdate_render 0
++pipe_bomb_beep_interval_delta 0.0225
++pipe_bomb_beep_min_interval 0.075
++pipe_bomb_initial_beep_interval 0.525
++pipe_bomb_shake_amplitude 100
++pipe_bomb_shake_radius 1000
++pipe_bomb_timer_duration 7.5
++player_old_armor 0
++prop_active_gib_limit 30
++prop_active_gib_max_fade_time 10
 +rr_debugplayer
 +rr_debugresponseconcept
 +rr_debugresponses
 +rr_debugrule
 +rr_dumpresponses
-+sb_allow_leading
-+sb_melee_approach_victim
-+sb_reachable_cache_paranoia
-+sb_skill
-+sb_temp_health_consider_factor
-+sb_toughness_buffer
-+sb_transition
++sb_allow_leading 0
++sb_melee_approach_victim 0
++sb_reachable_cache_paranoia 1
++sb_skill survivor
++sb_temp_health_consider_factor 0.8
++sb_toughness_buffer 20
++sb_transition 1
 +scene_async_prefetch_spew
 +scene_clientplayback
 +scene_forcecombined
@@ -171,71 +177,72 @@
 +sk_player_head
 +sk_player_leg
 +sk_player_stomach
-+spec_filter
-+spec_filter_infected
-+spec_filter_survivors
-+step_spline
-+survivor_death_anims
-+survivor_incap_hopeless_decay_rate
-+survivor_incap_max_fall_damage
-+survivor_incap_tongued_decay_rate
-+survivor_limit
-+survivor_model_selection
-+survivor_respawn_with_guns
-+sv__ragdoll_max_remove_per_frame
-+sv_allow_votes
-+sv_benchmark_autovprofrecord
-+sv_benchmark_numticks
-+sv_bonus_challenge
-+sv_clockcorrection_msecs
++spec_filter any
++spec_filter_infected any
++spec_filter_survivors any
++step_spline 0
++survivor_death_anims 0
++survivor_incap_hopeless_decay_rate 6
++survivor_incap_max_fall_damage 250
++survivor_incap_tongued_decay_rate 20
++survivor_limit 4
++survivor_model_selection -1
++survivor_respawn_with_guns 2
++sv__ragdoll_max_remove_per_frame 1
++sv_allow_votes 1
++sv_alltalk 1
++sv_benchmark_autovprofrecord 0 
++sv_benchmark_numticks 0
++sv_bonus_challenge 0
++sv_clockcorrection_msecs 50
 +sv_debug_entity
-+sv_infected_scale_max
-+sv_infected_scale_min
-+sv_lagflushbonecache
-+sv_lagpushticks
-+sv_massreport
-+sv_max_usercmd_future_ticks
-+sv_maxunlag
-+sv_music_debug
-+sv_player_max_separation_force
-+sv_playerperfhistorycount
-+sv_pz_endgame_vote_period
-+sv_pz_endgame_vote_post_period
-+sv_ragdoll_maxcount
-+sv_ragdoll_maxcount_boss
-+sv_ragdoll_maxcount_generic
-+sv_ragdoll_maxcount_gib
-+sv_ragdoll_maxcount_special
-+sv_ragdoll_maxcount_survivor
-+sv_ragdoll_version
-+sv_regeneration_wait_time
-+sv_rescue_disabled
-+sv_runcmds
-+sv_script_think_interval
-+sv_showladders
-+sv_strict_notarget
-+sv_teststepsimulation
++sv_infected_scale_max 1.025
++sv_infected_scale_min 1.025
++sv_lagflushbonecache 0
++sv_lagpushticks 0
++sv_massreport 0
++sv_max_usercmd_future_ticks 15
++sv_maxunlag 0.5
++sv_music_debug 0
++sv_player_max_separation_force 0
++sv_playerperfhistorycount 0
++sv_pz_endgame_vote_period 15
++sv_pz_endgame_vote_post_period 3
++sv_ragdoll_maxcount 80
++sv_ragdoll_maxcount_boss 80
++sv_ragdoll_maxcount_generic 80
++sv_ragdoll_maxcount_gib 80
++sv_ragdoll_maxcount_special 80
++sv_ragdoll_maxcount_survivor 4
++sv_ragdoll_version 
++sv_regeneration_wait_time 0
++sv_rescue_disabled 0
++sv_runcmds 1
++sv_script_think_interval 
++sv_showladders 0
++sv_strict_notarget 0
++sv_teststepsimulation 0
 +sv_thinktimecheck
-+sv_threaded_init
-+sv_unlag
-+sv_unlag_debug
-+sv_unlag_fixstuck
-+sv_vehicle_autoaim_scale
-+sv_vote_command_delay
-+sv_vote_failure_timer
-+sv_vote_issue_change_difficulty_allowed
-+sv_vote_issue_change_map_later_allowed
-+sv_vote_issue_change_map_now_allowed
-+sv_vote_issue_change_mission_allowed
-+sv_vote_issue_kick_allowed
-+sv_vote_issue_restart_game_allowed
-+sv_vote_kick_ban_duration
-+sv_vote_timer_duration
-+sv_zoo_model_filter
-+sv_zoo_spacing
-+sv_zoo_spacing_rows
-+sv_zoo_spacing_wrap
-+sv_zoo_tint_clr
++sv_threaded_init 
++sv_unlag 1
++sv_unlag_debug 0
++sv_unlag_fixstuck 1
++sv_vehicle_autoaim_scale 10
++sv_vote_command_delay 1.5
++sv_vote_failure_timer 0
++sv_vote_issue_change_difficulty_allowed 1
++sv_vote_issue_change_map_later_allowed 1
++sv_vote_issue_change_map_now_allowed 1
++sv_vote_issue_change_mission_allowed 1
++sv_vote_issue_kick_allowed 1
++sv_vote_issue_restart_game_allowed 1
++sv_vote_kick_ban_duration 1
++sv_vote_timer_duration 12
++sv_zoo_model_filter 
++sv_zoo_spacing 
++sv_zoo_spacing_rows 
++sv_zoo_spacing_wrap 
++sv_zoo_tint_clr 
 +sv_zoo_tint_loop
 +sv_zoo_wrap_skin
 +tank_rock_overhead_percent
