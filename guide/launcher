@@ -2,6 +2,7 @@
 -game left4dead2
 -ip $IP
 -port -$PORT
+-heapsize 1572864
 -tickrate 120
 -maxplayers 32
 -timeout 10
@@ -93,7 +94,9 @@
 +grenadelauncher_vel_up 125
 +grenadelauncher_vel_variance 0
 +host_flush_threshold 0
++host_framerate 0
 +host_xbox_e3_restart 1440
++hostfile "myhost.txt"
 +hostmap 
 +hostname 
 +inferno_max_trace_per_tick 16
