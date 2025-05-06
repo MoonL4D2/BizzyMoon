@@ -43,6 +43,7 @@
 +commentary_available 1
 +common_dps_spew 0
 +common_dps_window 0
++cpu_level 2
 +debug_l4dverbose 0
 +debug_materialmodifycontrol
 +debug_overlay_fullposition
@@ -81,6 +82,7 @@
 +fire_maxabsorb
 +flex_expression ""
 +flex_talk 
++fps_max 1000
 +func_break_reduction_factor 1.0
 +func_breakdmg_bullet 10
 +func_breakdmg_club 30
@@ -88,6 +90,8 @@
 +g_debug_doors 0
 +g_debug_npc_vehicle_roles 0
 +g_debug_transitions 0
++gpu_level 3
++gpu_mem_level 2
 +grenadelauncher_startpos_forward 16 
 +grenadelauncher_startpos_right 4
 +grenadelauncher_startpos_up 0
@@ -107,7 +111,18 @@
 +l4d_stats_track 1
 +lservercfgfile ""
 +mapcyclefile ""
++mat_dxlevel 92
++mat_hdr_level 2
++mat_monitorgamma 1.6
++mat_monitorgamma_tv_enabled 1
++mat_picmip -10
++mat_queue_mode 2
++mat_queue_report 0
++mat_spewalloc 0
++mat_triplebuffered 0
++mat_vsync 0
 +maxplayers 32
++mem_level 2
 +motdenabled 1
 +motdfile "mymotd.txt"
 +mp_allowNPCs 0
@@ -116,9 +131,9 @@
 +mp_autoteambalance 0
 +mp_c4timer 10
 +mp_clan_ready_signal
-+mp_clan_readyrestart
++mp_clan_readyrestart 0
 +mp_defaultteam 0
-+mp_enableroundwaittime
++mp_enableroundwaittime 0
 +mp_falldamage 0
 +mp_flashlight 1
 +mp_footsteps 1
@@ -172,6 +187,8 @@
 +player_old_armor 0
 +prop_active_gib_limit 30
 +prop_active_gib_max_fade_time 10
++r_dynamic 1
++r_shadowrendertotexture 1
 +rr_debugplayer
 +rr_debugresponseconcept
 +rr_debugresponses
@@ -190,11 +207,13 @@
 +scene_maxcaptionradius
 +script_attach_debugger_at_startup
 +script_break_in_native_debugger_on_error
++sk_autoaim_mode 3
 +sk_player_arm
 +sk_player_chest
 +sk_player_head
 +sk_player_leg
 +sk_player_stomach
++skill 3
 +spec_filter any
 +spec_filter_infected any
 +spec_filter_survivors any
@@ -228,6 +247,9 @@
 +sv_music_debug 0
 +sv_player_max_separation_force 0
 +sv_playerperfhistorycount 0
++sv_pure 0
++sv_pure_kick_clients 0
++sv_pure_trace 0
 +sv_pz_endgame_vote_period 15
 +sv_pz_endgame_vote_post_period 3
 +sv_ragdoll_maxcount 80
@@ -244,12 +266,14 @@
 +sv_showladders 0
 +sv_strict_notarget 0
 +sv_teststepsimulation 0
-+sv_thinktimecheck
++sv_thinktimecheck 
 +sv_threaded_init 
 +sv_unlag 1
 +sv_unlag_debug 0
 +sv_unlag_fixstuck 1
++sv_unlockedchapters 2147483647
 +sv_vehicle_autoaim_scale 10
++sv_visiblemaxplayers 8
 +sv_vote_command_delay 1.5
 +sv_vote_failure_timer 0
 +sv_vote_issue_change_difficulty_allowed 1
@@ -350,3 +374,4 @@
 +z_use_next_difficulty_damage_factor 0
 +z_witch_always_kills 0
 +z_witch_tongue_range 20
++map c6m1_riverbank
