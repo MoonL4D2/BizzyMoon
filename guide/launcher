@@ -1,12 +1,15 @@
+-steam
 -game left4dead2
 -ip $IP
 -port -$PORT
--
+-tickrate 120
+-maxplayers 32
+-timeout 10
 +exec console.cfg
 +servercfgfile "server1.cfg"
 +ai_debug_ragdoll_magnets 0
 +ai_debug_speech 0
-+ai_expression_frametime 
++ai_expression_frametime 0.0
 +ai_expression_optimization 0
 +ai_force_serverside_ragdoll 0
 +ai_LOS_mode 0
@@ -83,8 +86,8 @@
 +grenadelauncher_startpos_up 0
 +grenadelauncher_vel_up 125
 +grenadelauncher_vel_variance 0
-+hostmap
-+hostname
++hostmap 
++hostname 
 +inferno_max_trace_per_tick 16
 +l4d1_survivor_give_item 0
 +l4d_show_incapupdate 0
@@ -93,6 +96,9 @@
 +l4d_stats_track 1
 +lservercfgfile ""
 +mapcyclefile ""
++maxplayers 32
++motdenabled 1
++motdfile "mymotd.txt"
 +mp_allowNPCs 0
 +mp_autocrosshair 1
 +mp_autokick 0
@@ -112,6 +118,7 @@
 +mp_limitteams 0
 +mp_logdetail 0
 +mp_restartgame 0
++mp_roundlimit 5
 +mp_roundtime 9
 +mp_spawnprotectiontime 0
 +mp_stalemate_at_timelimit 0
@@ -134,7 +141,7 @@
 +nb_avoid 0
 +nb_avoid_interval 1
 +nb_player_move_direct 0
-+nextlevel
++nextlevel 
 +npc_vphysics 0
 +phys2_shoot_speed 0
 +phys_impactforcescale 0.1
@@ -190,7 +197,9 @@
 +survivor_respawn_with_guns 2
 +sv__ragdoll_max_remove_per_frame 1
 +sv_allow_votes 1
++sv_allow_wait_command 1
 +sv_alltalk 1
++sv_alternateticks 0
 +sv_benchmark_autovprofrecord 0 
 +sv_benchmark_numticks 0
 +sv_bonus_challenge 0
@@ -245,58 +254,59 @@
 +sv_zoo_tint_clr 
 +sv_zoo_tint_loop
 +sv_zoo_wrap_skin
-+tank_rock_overhead_percent
-+target_scan_use_query_cache
-+tauntfrequency
-+template_debug
-+tongue_bullet_radius
-+trace_report
-+tutor
-+tv_allow_camera_man
-+tv_allow_static_shots
-+tv_delay
++tank_rock_overhead_percent 100
++target_scan_use_query_cache 
++tauntfrequency 0
++template_debug 0
++tongue_bullet_radius 8
++trace_report 0
++tutor 0
++tv_allow_camera_man 1
++tv_allow_static_shots 1
++tv_delay 0
 +tv_delaymapchange
 +versus_force_start_time
-+versus_marker_num
-+versus_round_restarttimer
-+versus_round_restarttimer_finale
-+voice_serverdebug
++versus_marker_num 0
++versus_round_restarttimer 15
++versus_round_restarttimer_finale 15
++voice_serverdebug 0
 +vprof_scope_entity_gamephys
 +vprof_scope_entity_thinks
 +vprof_think_limit
-+vs_score_pp_health
-+vs_score_pp_healthbuffer
-+weapon_showproficiency
-+witch_rage_ramp_duration
-+xbox_steering_deadzone
-+xc_crouch_debounce
-+z_attack_change_target_range
-+z_attack_interval
-+z_attack_max_range
-+z_attack_min_range
-+z_attack_movement_penalty
-+z_attack_on_the_run_range
-+z_bbq_min
-+z_bbq_rate
-+z_burn_max
-+z_burn_rate
++vs_score_pp_health 1.0
++vs_score_pp_healthbuffer 1.0
++weapon_showproficiency 0
++witch_rage_ramp_duration 3
++xbox_steering_deadzone 0.0
++xc_crouch_debounce 0
++z_attack_change_target_range 40
++z_attack_interval 0.333333
++z_attack_max_range 40
++z_attack_min_range 20
++z_attack_movement_penalty 0.7
++z_attack_on_the_run_range 40
++z_bbq_min 0.0
++z_bbq_rate 0.0
++z_burn_max 0.0
++z_burn_rate 0.0
 +z_checkpoint_debug
-+z_damage_screen_fade_alpha
-+z_damage_screen_fade_duration
-+z_debug_infected_server_anim
-+z_debug_stuck
++z_damage_screen_fade_alpha 32
++z_damage_screen_fade_duration 0.666667
++z_debug_infected_server_anim 0
++z_debug_stuck 0
++z_difficulty Impossible
 +z_door_pound_damage
 +z_exploding_force
-+z_exploding_inner_radius
-+z_exploding_outer_radius
++z_exploding_inner_radius 200
++z_exploding_outer_radius 200
 +z_fatal_blast_incineration_probability
 +z_fatal_blast_max_ragdolls
 +z_fatal_blast_min_ragdolls
 +z_finale_spawn_safety_range_override
-+z_ghost_cooldown
-+z_ghost_delay_minspawn
-+z_ghost_duration
-+z_ghost_group_spawn
++z_ghost_cooldown 0
++z_ghost_delay_minspawn 1
++z_ghost_duration 1
++z_ghost_group_spawn 0
 +z_ghost_line_of_scrimmage_far
 +z_ghost_line_of_scrimmage_near
 +z_ghost_line_of_scrimmage_safety
@@ -305,24 +315,24 @@
 +z_ghost_offer_acceptance_time
 +z_ghost_offer_spawn_safety_time
 +z_ghost_spawn_distance
-+z_head_damage_causes_wounds
++z_head_damage_causes_wounds 1
 +z_hunter_lunge_distance
-+z_hunter_lunge_pitch
-+z_max_survivor_damage
-+z_minigun_atomize
-+z_non_head_damage_factor_multiplier
++z_hunter_lunge_pitch 30
++z_max_survivor_damage 500
++z_minigun_atomize 1
++z_non_head_damage_factor_multiplier 1.0
 +z_population
-+z_pounce_shake_amplitude
-+z_pounce_shake_duration
-+z_pounce_shake_radius
-+z_pounce_stumble_radius
-+z_ragdoll_discard_range
-+z_scrimmage_sphere
-+z_survivor_respawn_health
++z_pounce_shake_amplitude 6
++z_pounce_shake_duration 2
++z_pounce_shake_radius 300
++z_pounce_stumble_radius 175
++z_ragdoll_discard_range 2147483647
++z_scrimmage_sphere 1
++z_survivor_respawn_health 40
 +z_tank_footstep_shake_amplitude
-+z_tank_footstep_shake_duration
-+z_tank_footstep_shake_interval
-+z_tank_footstep_shake_radius
-+z_use_next_difficulty_damage_factor
-+z_witch_always_kills
-+z_witch_tongue_range
++z_tank_footstep_shake_duration 2
++z_tank_footstep_shake_interval 0.1
++z_tank_footstep_shake_radius 1000
++z_use_next_difficulty_damage_factor 0
++z_witch_always_kills 0
++z_witch_tongue_range 20
