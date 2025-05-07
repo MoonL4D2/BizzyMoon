@@ -281,10 +281,11 @@
 +sv_benchmark_numticks 0
 +sv_bonus_challenge 0
 +sv_cheats 0
++sv_clearhinthistory
 +sv_clockcorrection_msecs 50
 +sv_consistency 0
 +sv_contact ""
-+sv_debug_entity
++sv_debug_entity ""
 +sv_downloadurl ""
 +sv_forcepreload 1
 +sv_gametypes
