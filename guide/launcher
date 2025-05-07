@@ -1,7 +1,7 @@
 -steam
 -game left4dead2
 -ip $IP
--port -$PORT
+-port $PORT
 -heapsize 1572864
 -tickrate 120
 -maxplayers 32
