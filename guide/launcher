@@ -226,6 +226,7 @@
 +survivor_model_selection -1
 +survivor_respawn_with_guns 1
 +sv__ragdoll_max_remove_per_frame 1
++sv_allow_lobby_connect_only 0
 +sv_allow_votes 1
 +sv_allow_wait_command 1
 +sv_alltalk 1
@@ -235,6 +236,7 @@
 +sv_bonus_challenge 0
 +sv_cheats 0
 +sv_clockcorrection_msecs 50
++sv_consistency 0
 +sv_debug_entity
 +sv_forcepreload 1
 +sv_infected_scale_max 1.025
@@ -274,6 +276,7 @@
 +sv_unlockedchapters 2147483647
 +sv_vehicle_autoaim_scale 10
 +sv_visiblemaxplayers 8
++sv_voiceenable 1
 +sv_vote_command_delay 1.5
 +sv_vote_failure_timer 0
 +sv_vote_issue_change_difficulty_allowed 1
