@@ -37,6 +37,9 @@
 +car_alarm_distance 1000
 +car_alarm_duration 20
 +cc_norepeat 0
++cl_resend 1.5
++clientport 27005
++closecaption 1
 +collision_shake_amp 0.0
 +collision_shake_freq 0.0
 +collision_shake_time 0.0
@@ -59,6 +62,7 @@
 +dispcoll_drawplane 0
 +displaysoundlist 0
 +elevator_movedelay 0
++engine_no_focus_sleep 0
 +ent_debugkeys
 +ent_show_contexts
 +ent_steadystate_batchsize
@@ -83,6 +87,7 @@
 +flex_expression ""
 +flex_talk 
 +fps_max 1000
++func_break_max_pieces 30
 +func_break_reduction_factor 1.0
 +func_breakdmg_bullet 10
 +func_breakdmg_club 30
@@ -99,11 +104,14 @@
 +grenadelauncher_vel_variance 0
 +host_flush_threshold 0
 +host_framerate 0
++host_map "c6m1_riverbank.bsp"
 +host_xbox_e3_restart 1440
 +hostfile "myhost.txt"
-+hostmap 
-+hostname 
++hostip
++hostname "Bizzy's Moonmod" 
++hostport 27019
 +inferno_max_trace_per_tick 16
++ip "74.91.113.130"
 +l4d1_survivor_give_item 0
 +l4d_show_incapupdate 0
 +l4d_show_weaponequip 0
