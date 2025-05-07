@@ -111,7 +111,10 @@
 +l4d_stats_track 1
 +lservercfgfile ""
 +mapcyclefile ""
++mat_aaquality 0
++mat_antialias 8
 +mat_dxlevel 92
++mat_forceaniso 16
 +mat_hdr_level 2
 +mat_monitorgamma 1.6
 +mat_monitorgamma_tv_enabled 1
