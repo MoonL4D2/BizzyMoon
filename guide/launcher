@@ -38,6 +38,7 @@
 +car_alarm_duration 20
 +cc_norepeat 0
 +cl_resend 1.5
++clear_debug_overlays
 +clientport 27005
 +closecaption 1
 +collision_shake_amp 0.0
@@ -117,6 +118,7 @@
 +l4d_show_weaponequip 0
 +l4d_stats_nogameplaycheck 1
 +l4d_stats_track 1
++log on
 +lservercfgfile ""
 +mapcyclefile ""
 +mat_aaquality 0
@@ -134,6 +136,7 @@
 +mat_vsync 0
 +maxplayers 32
 +mem_level 2
++mm_server_search_lan_ports "27015,27016,27017,27018,27019,27020,27021,27022,27023,27024,27025"
 +motdenabled 1
 +motdfile "mymotd.txt"
 +mp_allowNPCs 0
@@ -177,9 +180,27 @@
 +nav_save_history 0
 +nb_avoid 0
 +nb_avoid_interval 1
++nb_debug_history 0
 +nb_player_move_direct 0
-+nextlevel 
++nb_stuck_dump_threshold -1
++net_allow_multicast 1
++net_chan_limit_disabled 0
++net_chan_limit_in_debug_session 0
++net_chan_limit_msec 0
++net_chan_stats_dump 0
++net_chan_stats_dump_top_msgs 0
++net_chan_stats_lru 0
++net_maxroutable 1200
++net_public_adr ""
++net_showsplits 0
++net_showudp 0
++net_showudp_remoteonly 0
++net_splitpacket_maxrate 144000
++net_splitrate 2
++nextlevel ""
++npc_height_adjust 1
 +npc_vphysics 0
++password ""
 +phys2_shoot_speed 0
 +phys_impactforcescale 0.1
 +phys_penetration_error_time 5
@@ -198,7 +219,14 @@
 +player_old_armor 0
 +prop_active_gib_limit 30
 +prop_active_gib_max_fade_time 10
++r_drawmodelstatsoverlaymax 10
++r_drawmodelstatsoverlaymin 1
 +r_dynamic 1
++r_eyemove 1
++r_eyeshift_x 0.0
++r_eyeshift_y 0.0
++r_eyeshift_z 0.0
++r_eyesize 0.0
 +r_shadowrendertotexture 1
 +rr_debugplayer
 +rr_debugresponseconcept
@@ -216,6 +244,9 @@
 +scene_clientplayback
 +scene_forcecombined
 +scene_maxcaptionradius
++scene_showlook 0
++scene_showmoveto 0
++scene_showunlock 0
 +script_attach_debugger_at_startup
 +script_break_in_native_debugger_on_error
 +sk_autoaim_mode 3
@@ -228,7 +259,10 @@
 +spec_filter any
 +spec_filter_infected any
 +spec_filter_survivors any
++spit_scaling_min_scale 1.0
++steam_controller_haptics 1
 +step_spline 0
++suitvolume 2.0
 +survivor_death_anims 0
 +survivor_incap_hopeless_decay_rate 6
 +survivor_incap_max_fall_damage 250
@@ -242,42 +276,77 @@
 +sv_allow_wait_command 1
 +sv_alltalk 1
 +sv_alternateticks 0
++sv_banid_enabled 1
 +sv_benchmark_autovprofrecord 0 
 +sv_benchmark_numticks 0
 +sv_bonus_challenge 0
 +sv_cheats 0
 +sv_clockcorrection_msecs 50
 +sv_consistency 0
++sv_contact ""
 +sv_debug_entity
++sv_downloadurl ""
 +sv_forcepreload 1
++sv_gametypes
 +sv_infected_scale_max 1.025
 +sv_infected_scale_min 1.025
 +sv_lagflushbonecache 0
 +sv_lagpushticks 0
++sv_lan 0
++sv_log_onefile 1
++sv_logbans 1
++sv_logecho 0
++sv_logfile 1
++sv_logflush 0
++sv_logsdir "logs"
 +sv_massreport 0
 +sv_max_usercmd_future_ticks 15
++sv_maxcmdrate 120
++sv_maxrate 144000
 +sv_maxunlag 0.5
++sv_mincmdrate 60
++sv_minrate 72000
 +sv_music_debug 0
++sv_password ""
++sv_pausable 0
 +sv_player_max_separation_force 0
 +sv_playerperfhistorycount 0
 +sv_pure 0
 +sv_pure_kick_clients 0
 +sv_pure_trace 0
++sv_pvsskipanimation 0
 +sv_pz_endgame_vote_period 15
 +sv_pz_endgame_vote_post_period 3
++sv_quota_stringcmdspersecond 2147483647
 +sv_ragdoll_maxcount 80
 +sv_ragdoll_maxcount_boss 80
 +sv_ragdoll_maxcount_generic 80
 +sv_ragdoll_maxcount_gib 80
 +sv_ragdoll_maxcount_special 80
 +sv_ragdoll_maxcount_survivor 4
-+sv_ragdoll_version 
++sv_ragdoll_version
++sv_rcon_banpenalty 0
++sv_rcon_log 0
++sv_rcon_maxfailures 20
++sv_rcon_minfailures 20
++sv_rcon_minfailuretime 1
 +sv_regeneration_wait_time 0
++sv_region 0
 +sv_rescue_disabled 0
++sv_reservation_timeout 5
 +sv_runcmds 1
++sv_search_key "bizzymod"
++sv_search_team_key "bizzymod"
 +sv_script_think_interval 
 +sv_showladders 0
++sv_skyname "sky_l4d_c6m1_hdr"
++sv_specaccelerate 5
++sv_specnoclip 1
++sv_specspeed 3
++sv_steamgroup "38693222"
++sv_steamgroup_exclusive 1
 +sv_strict_notarget 0
++sv_tags
 +sv_teststepsimulation 0
 +sv_thinktimecheck 
 +sv_threaded_init 
@@ -316,11 +385,15 @@
 +tv_allow_camera_man 1
 +tv_allow_static_shots 1
 +tv_delay 0
-+tv_delaymapchange
-+versus_force_start_time
++tv_delaymapchange 0
++tv_nochat 0
++tv_port 27020
++versus_force_start_time 120
 +versus_marker_num 0
 +versus_round_restarttimer 15
 +versus_round_restarttimer_finale 15
++voice_inputfromfile 0
++voice_recordtofile 0
 +voice_serverdebug 0
 +vprof_scope_entity_gamephys
 +vprof_scope_entity_thinks
@@ -329,7 +402,10 @@
 +vs_score_pp_healthbuffer 1.0
 +weapon_showproficiency 0
 +witch_rage_ramp_duration 3
++xbox_autothrottle 1
 +xbox_steering_deadzone 0.0
++xbox_throttlebias 100
++xbox_throttlespoof 200
 +xc_crouch_debounce 0
 +z_attack_change_target_range 40
 +z_attack_interval 0.333333
@@ -380,6 +456,7 @@
 +z_pounce_stumble_radius 175
 +z_ragdoll_discard_range 2147483647
 +z_scrimmage_sphere 1
++z_skip_wounds 0
 +z_survivor_respawn_health 40
 +z_tank_footstep_shake_amplitude
 +z_tank_footstep_shake_duration 2
