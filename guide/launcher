@@ -128,9 +128,11 @@
 +mat_hdr_level 2
 +mat_monitorgamma 1.6
 +mat_monitorgamma_tv_enabled 1
++mat_phong 1
 +mat_picmip -10
 +mat_queue_mode 2
 +mat_queue_report 0
++mat_specular 1
 +mat_spewalloc 0
 +mat_triplebuffered 0
 +mat_vsync 0
