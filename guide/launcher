@@ -230,6 +230,7 @@
 +r_eyeshift_z 0.0
 +r_eyesize 0.0
 +r_shadowrendertotexture 1
++rcon_password "BigBizzy101"
 +rr_debugplayer
 +rr_debugresponseconcept
 +rr_debugresponses
