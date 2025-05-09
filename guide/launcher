@@ -376,11 +376,11 @@
 +sv_zoo_spacing_rows 
 +sv_zoo_spacing_wrap 
 +sv_zoo_tint_clr 
-+sv_zoo_tint_loop
-+sv_zoo_wrap_skin
++sv_zoo_tint_loop 
++sv_zoo_wrap_skin 
 +sys_minidumpspewlines 0
 +tank_rock_overhead_percent 100
-+target_scan_use_query_cache 
++target_scan_use_query_cache 1
 +tauntfrequency 0
 +template_debug 0
 +tongue_bullet_radius 8
@@ -453,7 +453,7 @@
 +z_max_survivor_damage 500
 +z_minigun_atomize 1
 +z_non_head_damage_factor_multiplier 1.0
-+z_population
++z_population "c1streets"
 +z_pounce_shake_amplitude 6
 +z_pounce_shake_duration 2
 +z_pounce_shake_radius 300
