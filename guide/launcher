@@ -20,7 +20,7 @@
 +ai_expression_optimization 0
 +ai_force_serverside_ragdoll 0
 +ai_LOS_mode 0
-+ai_post_frame_navigation 1
++ai_post_frame_navigation 0
 +ai_sequence_debug 0
 +ai_setupbones_debug 0
 +ai_show_hull_attacks 0
@@ -49,10 +49,10 @@
 +common_dps_window 0
 +cpu_level 2
 +debug_l4dverbose 0
-+debug_materialmodifycontrol
-+debug_overlay_fullposition
-+debug_physimpact
-+debug_touchlinks
++debug_materialmodifycontrol 0
++debug_overlay_fullposition 0
++debug_physimpact 0
++debug_touchlinks 0
 +decalfrequency 1.25
 +director_afk_timeout 20
 +director_allow_infected_bots 1
@@ -64,12 +64,12 @@
 +displaysoundlist 0
 +elevator_movedelay 0
 +engine_no_focus_sleep 0
-+ent_debugkeys
-+ent_show_contexts
-+ent_steadystate_batchsize
-+ent_steadystate_cooldown
-+ent_steadystate_delay
-+ent_steadystate_enable
++ent_debugkeys ""
++ent_show_contexts 0
++ent_steadystate_batchsize 0
++ent_steadystate_cooldown 0
++ent_steadystate_delay 0
++ent_steadystate_enable 0
 +ent_steadystate_interval
 +fall_speed_fatal 720
 +fall_speed_safe 540
