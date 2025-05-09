@@ -425,7 +425,7 @@
 +z_damage_screen_fade_alpha 32
 +z_damage_screen_fade_duration 0.666667
 +z_debug_infected_server_anim 0
-+z_debug_stuck 0
++z_debug_stuck ""
 +z_difficulty Impossible
 +z_door_pound_damage
 +z_exploding_force
