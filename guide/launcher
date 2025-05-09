@@ -27,8 +27,8 @@
 +ai_use_visibility_cache 1
 +allow_all_bot_survivor_team 1
 +autoaim_max_deflect 1.0
-+autoaim_max_dist 0
-+autoaim_viewing_client
++autoaim_max_dist 8192
++autoaim_viewing_client 1
 +breakable_disable_gib_limit 0
 +breakable_multiplayer 1
 +car_alarm_chirp_distance 500
