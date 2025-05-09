@@ -82,7 +82,7 @@
 +fire_extabsorb
 +fire_extscale
 +fire_growthrate
-+fire_heatscale
++fire_heatscale 0.1
 +fire_incomingheatscale
 +fire_maxabsorb
 +flex_expression ""
@@ -109,7 +109,7 @@
 +host_xbox_e3_restart 1440
 +hostfile "myhost.txt"
 +hostip
-+hostname "Bizzy's Moonmod" 
++hostname "Bizzy's Moonmod"
 +hostport 27019
 +inferno_max_trace_per_tick 16
 +ip "74.91.113.130"
@@ -177,8 +177,8 @@
 +mp_weaponstay 0
 +music_bank_max_duration 600
 +music_bank_min_duration 600
-+nav_drag_selection_volume_zmax_offset
-+nav_drag_selection_volume_zmin_offset
++nav_drag_selection_volume_zmax_offset 32
++nav_drag_selection_volume_zmin_offset 32
 +nav_save_history 0
 +nb_avoid 0
 +nb_avoid_interval 1
@@ -231,11 +231,11 @@
 +r_eyesize 0.0
 +r_shadowrendertotexture 1
 +rcon_password "BigBizzy101"
-+rr_debugplayer
-+rr_debugresponseconcept
-+rr_debugresponses
-+rr_debugrule
-+rr_dumpresponses
++rr_debugplayer -1
++rr_debugresponseconcept ""
++rr_debugresponses 0
++rr_debugrule ""
++rr_dumpresponses 0
 +sb_allow_leading 0
 +sb_melee_approach_victim 0
 +sb_reachable_cache_paranoia 1
@@ -253,11 +253,11 @@
 +script_attach_debugger_at_startup
 +script_break_in_native_debugger_on_error
 +sk_autoaim_mode 3
-+sk_player_arm
-+sk_player_chest
-+sk_player_head
-+sk_player_leg
-+sk_player_stomach
++sk_player_arm 3
++sk_player_chest 3
++sk_player_head 3
++sk_player_leg 3
++sk_player_stomach 3
 +skill 3
 +spec_filter any
 +spec_filter_infected any
