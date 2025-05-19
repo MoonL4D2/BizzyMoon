@@ -31,8 +31,10 @@
 +autoaim_max_deflect 1.0
 +autoaim_max_dist 0
 +autoaim_viewing_client 1
+
 +breakable_disable_gib_limit 0
 +breakable_multiplayer 1
+
 +car_alarm_chirp_distance 500
 +car_alarm_chirp_duration 1
 +car_alarm_chirp_interval 1
@@ -50,6 +52,7 @@
 +common_dps_spew 0
 +common_dps_window 0
 +cpu_level 2
+
 +debug_l4dverbose 0
 +debug_materialmodifycontrol 0
 +debug_overlay_fullposition 0
@@ -64,6 +67,7 @@
 +director_vs_convert_pills 0
 +dispcoll_drawplane 0
 +displaysoundlist 0
+
 +elevator_movedelay 0
 +engine_no_focus_sleep 0
 +ent_debugkeys ""
@@ -73,6 +77,7 @@
 +ent_steadystate_delay 0
 +ent_steadystate_enable 0
 +ent_steadystate_interval 0
+
 +fall_speed_fatal 720
 +fall_speed_safe 540
 +fidget_max_interval 30
@@ -95,6 +100,7 @@
 +func_breakdmg_bullet 10
 +func_breakdmg_club 30
 +func_breakdmg_explosive 20
+
 +g_debug_doors 0
 +g_debug_npc_vehicle_roles 0
 +g_debug_transitions 0
@@ -105,6 +111,7 @@
 +grenadelauncher_startpos_up 0
 +grenadelauncher_vel_up 125
 +grenadelauncher_vel_variance 0
+
 +host_flush_threshold 0
 +host_framerate 0
 +host_map "c6m1_riverbank.bsp"
@@ -168,7 +175,7 @@
 +mp_stalemate_at_timelimit 0
 +mp_stalemate_enable 0
 +mp_stalemate_timelimit 0
-+mp_startmoney 99999
++mp_startmoney 16000
 +mp_teamlist ""
 +mp_teamoverride 1
 +mp_teamplay 0
