@@ -12,8 +12,10 @@
 -nominidumps
 -nomessagebox
 -nocrashdialog
+
 +exec console.cfg
 +servercfgfile "server1.cfg"
+
 +ai_debug_ragdoll_magnets 0
 +ai_debug_speech 0
 +ai_expression_frametime 0.0
@@ -340,7 +342,6 @@
 +sv_reservation_timeout 5
 +sv_runcmds 1
 +sv_search_key "bizzymod"
-+sv_search_team_key "bizzymod"
 +sv_script_think_interval 
 +sv_showladders 0
 +sv_skyname "sky_l4d_c6m1_hdr"
