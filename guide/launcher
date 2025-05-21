@@ -59,12 +59,14 @@
 +debug_physimpact 0
 +debug_touchlinks 0
 +decalfrequency 1.25
+
 +director_afk_timeout 20
 +director_allow_infected_bots 1
 +director_min_start_players 1
 +director_report_screen_delay 10
 +director_survival_setup_time 0
 +director_vs_convert_pills 0
+
 +dispcoll_drawplane 0
 +displaysoundlist 0
 
@@ -82,16 +84,16 @@
 +fall_speed_safe 540
 +fidget_max_interval 30
 +fidget_min_interval 15
-+fire_absorbrate
++fire_absorbrate 100
 +fire_dmgbase 1
 +fire_dmginterval 1
 +fire_dmgscale 0.1
-+fire_extabsorb
-+fire_extscale
-+fire_growthrate
-+fire_heatscale 0.1
-+fire_incomingheatscale
-+fire_maxabsorb
++fire_extabsorb 100
++fire_extscale 10
++fire_growthrate 1.0
++fire_heatscale 1.0
++fire_incomingheatscale 0.1
++fire_maxabsorb 100
 +flex_expression ""
 +flex_talk 0
 +fps_max 1000
@@ -120,8 +122,10 @@
 +hostip
 +hostname "Bizzy's Moonmod"
 +hostport 27019
+
 +inferno_max_trace_per_tick 16
 +ip "74.91.113.130"
+
 +l4d1_survivor_give_item 0
 +l4d_show_incapupdate 0
 +l4d_show_weaponequip 0
@@ -129,7 +133,9 @@
 +l4d_stats_track 1
 +log on
 +lservercfgfile ""
+
 +mapcyclefile ""
+
 +mat_aaquality 0
 +mat_antialias 8
 +mat_dxlevel 92
@@ -145,11 +151,13 @@
 +mat_spewalloc 0
 +mat_triplebuffered 0
 +mat_vsync 0
+
 +maxplayers 32
 +mem_level 2
 +mm_server_search_lan_ports "27015,27016,27017,27018,27019,27020,27021,27022,27023,27024,27025"
 +motdenabled 1
 +motdfile "mymotd.txt"
+
 +mp_allowNPCs 0
 +mp_autocrosshair 1
 +mp_autokick 0
@@ -184,16 +192,20 @@
 +mp_waitingforplayers_restart 0
 +mp_waitingforplayers_time 0
 +mp_weaponstay 0
+
 +music_bank_max_duration 600
 +music_bank_min_duration 600
+
 +nav_drag_selection_volume_zmax_offset 32
 +nav_drag_selection_volume_zmin_offset 32
 +nav_save_history 0
+
 +nb_avoid 0
 +nb_avoid_interval 1
 +nb_debug_history 0
 +nb_player_move_direct 0
 +nb_stuck_dump_threshold -1
+
 +net_allow_multicast 1
 +net_chan_limit_disabled 0
 +net_chan_limit_in_debug_session 0
@@ -206,12 +218,16 @@
 +net_showsplits 0
 +net_showudp 0
 +net_showudp_remoteonly 0
-+net_splitpacket_maxrate 144000
-+net_splitrate 2
++net_splitpacket_maxrate 72000
++net_splitrate 1
+
 +nextlevel ""
+
 +npc_height_adjust 1
 +npc_vphysics 0
+
 +password ""
+
 +phys2_shoot_speed 0
 +phys_impactforcescale 0.1
 +phys_penetration_error_time 5
@@ -221,15 +237,19 @@
 +phys_timescale 1.0
 +phys_upimpactforcescale 0.2
 +physicsshadowupdate_render 0
+
 +pipe_bomb_beep_interval_delta 0.0225
 +pipe_bomb_beep_min_interval 0.075
 +pipe_bomb_initial_beep_interval 0.525
 +pipe_bomb_shake_amplitude 100
 +pipe_bomb_shake_radius 1000
 +pipe_bomb_timer_duration 7.5
+
 +player_old_armor 0
+
 +prop_active_gib_limit 30
 +prop_active_gib_max_fade_time 10
+
 +r_drawmodelstatsoverlaymax 10
 +r_drawmodelstatsoverlaymin 1
 +r_dynamic 1
@@ -239,28 +259,34 @@
 +r_eyeshift_z 0.0
 +r_eyesize 0.0
 +r_shadowrendertotexture 1
+
 +rcon_password "BigBizzy101"
+
 +rr_debugplayer -1
 +rr_debugresponseconcept ""
 +rr_debugresponses 0
 +rr_debugrule ""
 +rr_dumpresponses 0
+
 +sb_allow_leading 0
 +sb_melee_approach_victim 0
 +sb_reachable_cache_paranoia 1
-+sb_skill survivor
++sb_skill "survivor"
 +sb_temp_health_consider_factor 0.8
 +sb_toughness_buffer 20
 +sb_transition 1
+
 +scene_async_prefetch_spew
-+scene_clientplayback
-+scene_forcecombined
-+scene_maxcaptionradius
++scene_clientplayback 1
++scene_forcecombined 0
++scene_maxcaptionradius 1500
 +scene_showlook 0
 +scene_showmoveto 0
 +scene_showunlock 0
+
 +script_attach_debugger_at_startup
 +script_break_in_native_debugger_on_error
+
 +sk_autoaim_mode 3
 +sk_player_arm 3
 +sk_player_chest 3
@@ -268,13 +294,17 @@
 +sk_player_leg 3
 +sk_player_stomach 3
 +skill 3
+
 +spec_filter any
 +spec_filter_infected any
 +spec_filter_survivors any
+
 +spit_scaling_min_scale 1.0
 +steam_controller_haptics 1
+
 +step_spline 0
 +suitvolume 2.0
+
 +survivor_death_anims 0
 +survivor_incap_hopeless_decay_rate 6
 +survivor_incap_max_fall_damage 250
@@ -331,13 +361,13 @@
 +sv_pz_endgame_vote_period 15
 +sv_pz_endgame_vote_post_period 3
 +sv_quota_stringcmdspersecond 2147483647
-+sv_ragdoll_maxcount 80
-+sv_ragdoll_maxcount_boss 80
-+sv_ragdoll_maxcount_generic 80
-+sv_ragdoll_maxcount_gib 80
-+sv_ragdoll_maxcount_special 80
-+sv_ragdoll_maxcount_survivor 4
-+sv_ragdoll_version
++sv_ragdoll_maxcount 32767
++sv_ragdoll_maxcount_boss 32767
++sv_ragdoll_maxcount_generic 32767
++sv_ragdoll_maxcount_gib 32767
++sv_ragdoll_maxcount_special 32767
++sv_ragdoll_maxcount_survivor 32767
++sv_ragdoll_version 1
 +sv_rcon_banpenalty 0
 +sv_rcon_log 0
 +sv_rcon_maxfailures 20
@@ -386,7 +416,9 @@
 +sv_zoo_tint_clr 
 +sv_zoo_tint_loop 
 +sv_zoo_wrap_skin 
+
 +sys_minidumpspewlines 0
+
 +tank_rock_overhead_percent 100
 +target_scan_use_query_cache 1
 +tauntfrequency 0
@@ -400,25 +432,32 @@
 +tv_delaymapchange 0
 +tv_nochat 0
 +tv_port 27020
+
 +versus_force_start_time 120
 +versus_marker_num 0
 +versus_round_restarttimer 15
 +versus_round_restarttimer_finale 15
+
 +voice_inputfromfile 0
 +voice_recordtofile 0
 +voice_serverdebug 0
+
 +vprof_scope_entity_gamephys
 +vprof_scope_entity_thinks
 +vprof_think_limit
+
 +vs_score_pp_health 1.0
 +vs_score_pp_healthbuffer 1.0
+
 +weapon_showproficiency 0
 +witch_rage_ramp_duration 3
+
 +xbox_autothrottle 1
 +xbox_steering_deadzone 0.0
 +xbox_throttlebias 100
 +xbox_throttlespoof 200
 +xc_crouch_debounce 0
+
 +z_attack_change_target_range 40
 +z_attack_interval 0.333333
 +z_attack_max_range 40
@@ -477,4 +516,5 @@
 +z_use_next_difficulty_damage_factor 0
 +z_witch_always_kills 0
 +z_witch_tongue_range 20
+
 +map c6m1_riverbank
