@@ -44,7 +44,7 @@
 +cc_norepeat 0
 +cl_resend 1.5
 +clear_debug_overlays
-+clientport 27005
++clientport 0
 +closecaption 1
 +collision_shake_amp 0.0
 +collision_shake_freq 0.0
