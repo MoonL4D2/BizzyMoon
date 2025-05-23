@@ -3,6 +3,7 @@
 -ip $IP
 -port $PORT
 -heapsize 1572864
+-threads 64
 -tickrate 120
 -maxplayers 32
 -timeout 10
