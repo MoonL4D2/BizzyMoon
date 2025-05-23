@@ -119,7 +119,7 @@
 +host_map "c6m1_riverbank.bsp"
 +host_xbox_e3_restart 1440
 +hostfile "myhost.txt"
-+hostip
++hostip "1247506818"
 +hostname "Bizzy's Moonmod"
 +hostport 27019
 
@@ -163,7 +163,7 @@
 +mp_autokick 0
 +mp_autoteambalance 0
 +mp_c4timer 10
-+mp_clan_ready_signal
++mp_clan_ready_signal "ready"
 +mp_clan_readyrestart 0
 +mp_defaultteam 0
 +mp_enableroundwaittime 0
