@@ -12,15 +12,15 @@
 		}
 		"surfmod"
 		{
-			"name" "surfmod 6.9.420"
+			"name" "surfmod 1.0"
 		}
 		"pissmod"
 		{
-			"name" "pissmod 6.9.420"
+			"name" "pissmod 0.0"
 		}
 		"barrymod"
 		{
-			"name" "barrymod 70.0.0"
+			"name" "marrymod 1.0"
 		}
 		"bizzymod"
 		{
