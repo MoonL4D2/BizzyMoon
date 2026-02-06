@@ -1,18 +1,3 @@
--steam
--game left4dead2
--ip $IP
--port $PORT
--heapsize 1572864
--tickrate 60
--maxplayers 32
--timeout 10
--high
--preload
--nohltv
--nominidumps
--nomessagebox
--nocrashdialog
-
 +exec console.cfg
 +servercfgfile "server1.cfg"
 
