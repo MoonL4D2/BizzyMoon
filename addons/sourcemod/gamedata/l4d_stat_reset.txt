@@ -1,0 +1,32 @@
+"Games"
+{
+    "left4dead"
+    {
+		"Signatures"
+		{
+			"CTerrorPlayer::ResetCheckpointStats"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer20ResetCheckpointStatsEv"
+				"windows"	"\x51\x53\x55\x56\x8B\xE9\x8D\xB5\x2A\x2A\x2A\x2A\x33\xDB\x39\x1E\x57"
+				/* 51 53 55 56 8B E9 8D B5 2A 2A 2A 2A 33 DB 39 1E 57 */
+				/* Found by XRef from CTerrorPlayer::RoundRespawn */
+			}
+		}
+    }
+    
+    "left4dead2"
+    {
+		"Signatures"
+		{
+			"CTerrorPlayer::ResetCheckpointStats"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer20ResetCheckpointStatsEv"
+				"windows"	"\x53\x56\x8B\xF1\x33\xDB\x57\x39\x9E\x2A\x2A\x2A\x2A\x74\x29"
+				/* 53 56 8B F1 33 DB 57 39 9E ? ? ? ? 74 29 */
+				/* Found by XRef from CTerrorPlayer::RoundRespawn */
+			}
+		}
+    }
+}
