@@ -3,7 +3,7 @@ Bizzymod was designed with simple idea that games should try to be fun and this 
 
 Bizzy's best server, Bizzy's Moon Mod, is quite possibly the greatest Linux dedicated L4D2 server in existance, currently residing in Chicago (US-East).
 
-Moon Mod was designed with the simple idea that people shouldn't ever have to play shit mod.
+Moon Mod was designed with the simple idea that people shouldn't ever have to play shit mod EVER.
 
 Current Server IP:
 connect 74.91.113.130:27019
