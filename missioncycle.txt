@@ -1,1 +1,4 @@
-
+airport
+farm
+hospital
+smalltown
