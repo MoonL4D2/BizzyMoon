@@ -32,12 +32,13 @@
 		convar
 		{
 			sv_disable_glow_survivors 1
-			sv_disable_glow_faritems 1
+			sv_disable_glow_faritems 0
 			sv_rescue_disabled 1
-			z_non_head_damage_factor_multiplier 0.5
+			z_non_head_damage_factor_multiplier 1.0
 			z_head_damage_causes_wounds 1
 			z_use_next_difficulty_damage_factor 1
 			z_witch_always_kills 1
+			"z_witch_damage_per_kill_hit" 30
 		}
 
 	}
@@ -74,39 +75,40 @@
 		{
 			"z_scrimmage_creep_delay" 0
 			"z_scrimmage_creep_rate" 100
-			"z_spawn_safety_range" 200
-			"tongue_miss_delay" 3
-			"tongue_hit_delay" 15
+			"z_spawn_safety_range" 150
+			"tongue_miss_delay" 2.8
+			"tongue_hit_delay" 10
 			"tongue_dropping_to_ground_time" 0.5
-			"tongue_los_forgiveness_time" 1.5
-			"tongue_no_progress_choke_early_delay" 1.0
-			"z_pounce_stumble_radius" 160
-			"z_pounce_damage_interrupt" 150
-			"z_hunter_limit" 2
-			"z_smoker_limit" 2
-			"z_max_stagger_duration" 0.9
+			"tongue_los_forgiveness_time" 1
+			"tongue_no_progress_choke_early_delay" 0.5
+			"z_pounce_stumble_radius" 175
+			"z_pounce_damage_interrupt" 1000
+			"z_hunter_limit" 1
+			"z_smoker_limit" 1
+			"z_max_stagger_duration" 0.8
 			"sv_alltalk" 0
 			"z_ghost_los_expected_progress" 2000
-			"tongue_choke_damage_amount" 5
+			"tongue_choke_damage_amount" 6
+			"tongue_drag_damage_amount" 4
 			"tongue_break_from_damage_amount" 300
-			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_min" 1
 			"director_special_initial_spawn_delay_max" 10
-			"sv_infected_ceda_vomitjar_probability" 0
-			"versus_tank_flow_team_variation" 0
-			"z_ghost_delay_max" 24
-			"vomitjar_duration_infected_pz" 15
-			"z_leap_interval_post_incap" 25
+			"sv_infected_ceda_vomitjar_probability" 0.125
+			"versus_tank_flow_team_variation" 0.0
+			"z_ghost_delay_max" 18
+			"vomitjar_duration_infected_pz" 30
+			"z_leap_interval_post_incap" 12
 			"z_frustration_spawn_delay" 15
-			"z_jockey_ride_damage" 2
+			"z_jockey_ride_damage" 3
 			"z_jockey_ride_damage_interval" 0.5
 			"tank_burn_duration" 90
-			"z_witch_damage_per_kill_hit" 15
+			"z_witch_damage_per_kill_hit" 25
 			
 			// these are 360 only convar changes, if you prefix with 360_, they'll
 			// get set on 360 and dedicated for 360
-			"360_z_mega_mob_size" 25
-			"360_z_mob_spawn_max_size" 18
-			"360_z_versus_wandering_density" 0.026
+			"360_z_mega_mob_size" 30
+			"360_z_mob_spawn_max_size" 20
+			"360_z_versus_wandering_density" 0.025
 		}
 	}
 
@@ -150,9 +152,9 @@
 
 			// these are 360 only convar changes, if you prefix with 360_, they'll
 			// get set on 360 and dedicated for 360
-			"360_z_mega_mob_size" 25
-			"360_z_mob_spawn_max_size" 18
-			"360_z_versus_wandering_density" 0.026
+			"360_z_mega_mob_size" 30
+			"360_z_mob_spawn_max_size" 20
+			"360_z_versus_wandering_density" 0.025
 		}
 	}
 
